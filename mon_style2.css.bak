@@ -1,0 +1,85 @@
+@keyframes wheelHueColor {
+    from, to { color: hsl(324, 70%, 45%); }
+    10%      { color: hsl(360, 65%, 45%); }
+    20%      { color: hsl( 36, 80%, 45%); }
+    30%      { color: hsl( 72, 75%, 35%); }
+    40%      { color: hsl(108, 65%, 35%); }
+    50%      { color: hsl(144, 75%, 35%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 60%, 45%); }
+    80%      { color: hsl(252, 65%, 50%); }
+    90%      { color: hsl(288, 60%, 40%); }
+}
+
+.titre {
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 100s infinite;
+	font-family:arial;
+	font-weight:bold;
+	text-align:center;
+	font-size:x-large;
+}
+
+
+body {
+	background-image:url(https://pm1.narvii.com/6734/041336f0aaf5a013b95631a86c937b460105b11fv2_hq.jpg);
+	background-size:800px;
+	background-position: -135px 0px;
+	background-attachment:fixed;
+}
+
+
+.zoom {
+width: 100px;
+height: 100px;
+}
+.image {
+width: 100%;
+height: 100%;
+}
+.image img {
+/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+-webkit-transition: all 1s ease; /* Safari et Chrome */
+-moz-transition: all 1s ease; /* Firefox */
+-ms-transition: all 1s ease; /* Internet Explorer 9 */
+-o-transition: all 1s ease; /* Opera */
+transition: all 1s ease;
+}
+.image:hover img {
+/* L'image est grossie de 25% */
+-webkit-transform:scale(1.25); /* Safari et Chrome */
+-moz-transform:scale(1.25); /* Firefox */
+-ms-transform:scale(1.25); /* Internet Explorer 9 */
+-o-transform:scale(1.25); /* Opera */
+transform:scale(1.25);
+}
+
+
+div {
+  display: flex;
+}
+
+.center-div {
+    margin-left: 37%;
+}
+
+.membres {
+	margin-left:44%;
+	margin-bottom:100px;
+}
+
+
+
+.center-p {
+    text-align: center;
+    display: block;
+    width: 350px;
+    margin: auto;
+}
+
+
+img.center {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
